@@ -1,0 +1,2 @@
+-e ../radish-bdd-extensions/pkg_radish_ext
+-e ../radish-bdd-extensions/pkg_radish_rest
