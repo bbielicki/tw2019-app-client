@@ -45,6 +45,7 @@ class Users(ConduitGroupApi):
             }
         })
         self.client.check_status(response)
+        self.client.default_kwargs["headers"] = {"Authorization": f"Token {response.json()['user']['token']}"}
         return response
 
     def get_current_user(self) -> Response:
